@@ -117,13 +117,13 @@ http://publicip(elkserver):5601
 
 Specific commands the user will need to run to download the playbook, update the files, etc:
 
-ssh Admin@JumpBox (PrivateIP)
-sudo docker container list -a - Locate the ansible container
-sudo docker start (Funny_Name)
-sudo docker attach (Funny_Name)
-cd /etc/ansible
-ansible-playbook elk.yml (Installs and Configures ELK-Server)
-cd /etc/ansible/
-ansible-playbook filebeat-playbook.yml (installs and configures filebeat)
-ansible-playbook filebeat-playbook.yml (installs and configures metricbeat)
-Open a new browser and navigate to ELK-Server-PublicIP:5601/app/kibana - This will bring up Kibana Web Portal
+1. ssh Admin@JumpBox (PrivateIP)
+2. sudo docker container list -a - Locate the ansible container
+3. sudo docker start (Funny_N. ame)
+4. sudo docker attach (Funny_Name)
+5. cd /etc/ansible
+6. ansible-playbook elk.yml (Installs and Configures ELK-Server)
+7. cd /etc/ansible/
+8. ansible-playbook filebeat-playbook.yml (installs and configures filebeat)
+9. ansible-playbook filebeat-playbook.yml (installs and configures metricbeat)
+10. Open a new browser and navigate to ELK-Server-PublicIP:5601/app/kibana - This will bring up Kibana Web Portal
